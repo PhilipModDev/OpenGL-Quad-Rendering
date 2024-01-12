@@ -41,7 +41,7 @@ public class Window extends JFrame {
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         list.addListSelectionListener(e -> {
             String item = stringsList[e.getFirstIndex()];
-            if (item.equals("QuadTest2")){
+            if ("QuadTest2".equals(item)){
                 setVisible(false);
                 new Lwjgl3Application(new RenderQuad(), config);
             }
